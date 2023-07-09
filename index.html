@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="search">
+                <h1>Medicen product</h1>
+                <input type="text" name="" id="find" placeholder="search here..." onkeyup="search()">
+
+            </div>
+             <div class="product-list">
+                
+                    <div class="Product">
+                    <img src="https://sp.yimg.com/ib/th?id=OP.JNucO6OmMRqvVg474C474&o=5&pid=21.1&w=160&h=105">
+                    <h3>Paracita mole</h3>
+                </div>
+                    <div class="product">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.VF0PaevOtMsIrJHhIBVrMwHaDP&pid=Api&P=0&h=180">
+                    <h3>Alprazolam</h3>
+                    </div>
+                    <div class="product">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.NUYcnStv8SXpJepWVWwYAwHaE8&pid=Api&P=0&h=180">
+                      <h3>Metronidazole</h3>
+                    </div>
+                    <div class="product">
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.HdaytyeYDYbw2YOzeQakYAHaEY&pid=Api&P=0&h=180">
+                      <h3>Naproxen</h3>
+                    </div>
+                    <div class="product">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.HdaytyeYDYbw2YOzeQakYAHaEY&pid=Api&P=0&h=180">
+                            <h3>Naproxen</h3>
+                          </div>
+                </div>
+             </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        function search(){
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll(' .product');
+            let l = document.getElementsByTagName('h3');
+            for( var i=0;i<=l.length;i++){
+                let a=item[i].getElementsByTagName('h3')[0];
+                let value=a.innerHTML  || a.innerText  || a.textContent;
+                if(value.toUpperCase().indexOf(filter)> -1){
+                    item[i].style.display= "";
+                }
+                else{
+                    item[i].style.display= "none";
+                   
+                }
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

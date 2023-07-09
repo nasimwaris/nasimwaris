@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    body{
+        background-color: rgb(16, 142, 142);
+    }
+    .container-fluid{
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 80px 0px;
+    }
+    .container
+    {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+    }
+     .container .search
+     {
+        display: flex;
+        padding: 30px 0px;
+        justify-content: space-between;
+     }
+     .container .search h1{
+          letter-spacing: 3px;
+          display: inline-block;
+          border-bottom: 2px solid green;
+          padding-bottom: 10px;
+     }
+     .container .search input{
+        width: 60%;
+        padding: 5px 16px;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 20px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+     }
+     .container .search input::placeholder {
+        color: blue;
+        font-weight: 500;
+     }
+    .container.product-list{
+        display: flex;
+    }
+
+

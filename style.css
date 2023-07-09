@@ -1,0 +1,109 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   }
+   body{
+    background-color: rgb(196, 27, 27);
+   }
+    .contain{
+      width: 300px;
+      height: 355px;
+      text-align: center;
+      color: aliceblue;
+      background-color: rgb(6, 6, 7);
+      margin-left: 39%;
+        margin-top: auto;
+    }
+    .contain text{
+      position: relative;
+      top: 7%;
+    }
+    .inp1{
+      border: none;
+      background-color: black;
+      border-bottom: 3px solid white;
+      width: 250px;
+      font-size: 20px;
+      margin-top: 40px;
+      outline: none;
+      color: white
+
+    } 
+    .inp2{
+      border: none;
+      background-color: black;
+      border-bottom: 3px solid white;
+      width: 250px;
+      font-size: 20px;
+      margin-top: 40px;
+      outline: none;
+      color: white
+
+    } 
+    .text button{
+      width: 250px;
+      height: 44px;
+      background-color: aqua;
+      color: black;
+      border: none;
+      font-size: 22px;
+      border-radius: 25px;
+      margin: 20px;
+    }
+    button:hover{
+      border: 3px solid aqua;
+      color: white;
+      font-size: 20px;
+      background-color: black;
+    }
+     p{
+      margin-top: 30px;
+      font-size: 20px;
+
+     }
+     p span{
+      color: aqua;
+     }
+     a{
+      text-decoration: none;
+     }
+     .home{
+      text-align: right;
+       color: black;
+       margin: 20px;
+       list-style: none;
+       
+      
+      
+       
+       padding: 15px;
+       font-size: 20px;
+       display: inline;
+     }
+     
+     span{
+      margin: 0 10px;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+     }
+
+     @media only screen and (max-width: 700px){
+      span{
+          display: block;
+      }
+      ul{
+          display: none;
+      }
+     }
+     .home{
+      display: block;
+     }
+     .heding{
+      text-align: center;
+      position: relative;
+      top: 7%;
+      font-size: 50px;
+      background-color: blue;
+
+     }
